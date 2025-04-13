@@ -1,0 +1,13 @@
+@import "./variables";
+@import "./header";
+
+.contact button {
+  @include design();
+  background-color: $primaryBtn;
+}
+
+.info {
+  @extend header;
+  background-color: brown;
+  width: 100% - 20%;
+}
