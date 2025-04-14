@@ -1,0 +1,21 @@
+$slight-color: #fde5aa45;
+$primary-color: #de1b1b;
+$secondary-color: #909090;
+
+$font-stack: Arial, Helvetica, sans-serif;
+// $font-size: 16px;
+// $font-weight: 400;
+// $line-height: 1.5;
+// $spacing: 1rem;
+// $border-radius: 0.25rem;
+// $transition: all 0.3s ease-in-out;
+// $shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+
+// Set text color based on background lightness
+@function set-text-color($color) {
+  @if (lightness($color) > 70) {
+    @return #333;
+  } @else {
+    @return #fff;
+  }
+}
